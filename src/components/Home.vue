@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1 className="todos_title">Marty's Todo List</h1>
+    <h1 className="todos_title">
+      Marty's <br />
+      Defect Dojo <br />
+      Todo List
+    </h1>
 
     <!-- Form to add a new todo -->
     <form @submit.prevent="addTodo">
@@ -16,7 +20,11 @@
 
     <!-- List of todos -->
     <ul className="todos_list">
-      <li className="todos_item" v-for="todo in todosStore.todos" :key="todo.id">
+      <li
+        className="todos_item"
+        v-for="todo in todosStore.todos"
+        :key="todo.id"
+      >
         {{ todo.text }}
         <button className="delete_button" @click="deleteTodo(todo.id)">
           Delete
@@ -60,10 +68,11 @@ export default {
 </script>
 
 <style scoped>
+
 /* Styles for the Home page */
 .todos_title {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 40px;
+  font-size: 30px;
   color: #42b983;
 }
 
@@ -75,11 +84,12 @@ export default {
 }
 
 .form_input::placeholder {
-    font-size: 15px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 15px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .add_button {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   padding: 10px 15px;
   font-size: 1em;
   background-color: #42b983;
@@ -122,3 +132,7 @@ export default {
   background-color: #d43f3f;
 }
 </style>
+
+
+
+

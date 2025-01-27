@@ -2,7 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/info">Info</router-link>
     </nav>
     <router-view />
     <!-- Displays the current route's component -->
@@ -29,3 +30,11 @@ nav a.router-link-exact-active {
   font-weight: bold;
 }
 </style>
+
+
+
+
+
+
+
+
